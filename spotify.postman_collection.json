@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "473b8e13-62fe-4360-a171-2cf1a3be0ed2",
+		"name": "spotify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createPlaylist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer BQDrTN7xPyxgv-Yu_vVThnUhElCkegMMIIXrZOlgu16jldYc3vYlfB8xvd94baCTMhm9r-gK1l_EtjIo9LFO1XcqOux6xwltE1ZYLc9QpdFkEiuFhSbzLU1-dW7W6DSh5fsTUkryybRcFEILXxqL2SW-9MLM7sOIZAQgcGGMDORV9hrqR6eJxz-zLmsJTirK_KIPKh6X0bk8f90tH873K5GupxYCilWwJ1NGV4gRqd3Nh0Eecd_fy_xJa_KKKNtL_--koXZ09gsr9nzmV0o",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Playlists using postman\",\r\n  \"description\": \"practice\",\r\n  \"public\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.spotify.com/v1/users/dhbopdapbygoqdhf2ur9wsit1/playlists",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"users",
+						"dhbopdapbygoqdhf2ur9wsit1",
+						"playlists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer BQDrTN7xPyxgv-Yu_vVThnUhElCkegMMIIXrZOlgu16jldYc3vYlfB8xvd94baCTMhm9r-gK1l_EtjIo9LFO1XcqOux6xwltE1ZYLc9QpdFkEiuFhSbzLU1-dW7W6DSh5fsTUkryybRcFEILXxqL2SW-9MLM7sOIZAQgcGGMDORV9hrqR6eJxz-zLmsJTirK_KIPKh6X0bk8f90tH873K5GupxYCilWwJ1NGV4gRqd3Nh0Eecd_fy_xJa_KKKNtL_--koXZ09gsr9nzmV0o",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.spotify.com/v1/search?q=dance monkey&type=track",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "dance monkey"
+						},
+						{
+							"key": "type",
+							"value": "track"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
